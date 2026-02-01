@@ -1,16 +1,13 @@
+import { Container, Title } from "@/components/shared";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main>
-      <h1>Пицца</h1>
-      <h3>Выберите пиццу</h3>
-      <ul>
-        <li>Гавайская</li>
-        <li>Пипперони</li>
-        <li>Курочка барбекю</li>
-        <li>4 сыра</li>  
-      </ul>  
-    </main>
-  );
+    <>
+      <Container>
+        <Title text="Все пиццы" size="lg" className="font-extrabold mt-10"/>
+      </Container>
+    </>
+  )
 }
